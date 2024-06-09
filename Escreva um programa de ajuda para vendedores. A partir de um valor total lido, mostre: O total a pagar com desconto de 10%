@@ -1,0 +1,17 @@
+# 43 - Escreva um programa de ajuda para vendedores. A partir de um valor total lido, mostre:
+# O total a pagar com desconto de 10%;
+# o valor de cada parcela, no parcelamento de 3x sem juros;
+# a comissão do vendedor, no caso da venda ser a vista (5% sobre o valor com desconto);
+# a comissão do vendedor, no caso da venda ser parcelada (5% sobre o valor total);
+
+vt = float(input('Imforme o valor total da venda: '))
+v1 = vt * 0.90
+v2 = vt / 3
+
+c1 = v1 * 0.05
+c2 = vt * 0.05
+print(f'O valor total da mercadoria é de R$ {vt}')
+print(f'O valor com desconto a vista é de R$ {round(v1, 2)}')
+print(f'O valor parcelado sem juros é de 3 vezes de R$ {round(v2, 2)}')
+print(f'O valor da comissão do vendedor caso a compra seja a vista é de R$ {round(c1, 2)}')
+print(f'O valor da comissão do vendedor caso a compra seja parcelada é de R$ {round(c2, 2)}')
